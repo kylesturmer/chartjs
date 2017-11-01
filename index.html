@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ChartJS test">
+    <meta name="author" content="Kyle Sturmer">
+
+    <title>ChartJS</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/Chart.js"></script>
+</head>
+
+<body>
+    <canvas id="chartjs-4" class="chartjs" width="561" height="280" style="display: block; width: 561px; height: 280px;"></canvas>
+    <script>
+      new Chart(document.getElementById("chartjs-4"),
+      {"type":"doughnut","data":{"labels":["Failure","Success"],
+      "datasets":[{"label":"My First Dataset","data":[100,50],
+      "backgroundColor":["rgb(255, 99, 132)","rgb(54, 162, 235)"]}]}});
+    </script>
+</body>
